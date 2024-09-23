@@ -1,0 +1,1 @@
+{"version":3,"file":"568.js","sources":["webpack://rspack-test/./src/Test.tsx"],"sourcesContent":["export const Test = () => {\n  return (\n    <div>\n      <h1>Test1</h1>\n    </div>\n  );\n};\n"],"names":["Test"],"mappings":"sKAAO,IAAMA,EAAO,IAEhB,UAAC,O,SACC,UAAC,M,SAAG,O"}
