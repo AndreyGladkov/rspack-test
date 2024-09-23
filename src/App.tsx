@@ -1,12 +1,15 @@
-import { useState } from "react";
+import { lazy, useState } from "react";
 import reactLogo from "./assets/react.svg";
 import "./App.css";
-
+const Test = lazy(() =>
+  import("./Test.tsx").then(({ Test }) => ({ default: Test }))
+);
 function App() {
   const [count, setCount] = useState<number>(0);
 
   return (
     <div className="App">
+      <Test />
       <div>
         <a href="https://reactjs.org" target="_blank" rel="noreferrer">
           <img src={reactLogo} className="logo react" alt="React logo" />

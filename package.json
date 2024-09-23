@@ -4,18 +4,25 @@
   "version": "1.0.0",
   "scripts": {
     "dev": "cross-env NODE_ENV=development rspack serve",
+    "generate": "kubb --config kubb.config.ts",
     "build": "cross-env NODE_ENV=production rspack build"
   },
   "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "@kubb/swagger-client": "^2.26.3",
+    "react": "^17.0.0",
+    "react-dom": "^17.0.0"
   },
   "devDependencies": {
+    "@kubb/cli": "^2.26.3",
+    "@kubb/core": "^2.26.3",
+    "@kubb/plugin-oas": "^2.26.3",
+    "@kubb/swagger-tanstack-query": "^2.26.3",
+    "@kubb/swagger-ts": "^2.26.3",
     "@rspack/cli": "1.0.0",
     "@rspack/core": "1.0.0",
     "@rspack/plugin-react-refresh": "^1.0.0",
-    "@types/react": "^18.2.48",
-    "@types/react-dom": "^18.2.18",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
     "cross-env": "^7.0.3",
     "react-refresh": "^0.14.0",
     "ts-node": "^10.9.2",
